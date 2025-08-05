@@ -1,3 +1,6 @@
+## Server Projects
+
+
 # ASP.NET Core Pagination, Sorting, and Searching Examples
 
 This repository contains **two sample projects** demonstrating how to implement **pagination**, **sorting**, and **searching** in ASP.NET Core Web API using different architectural approaches.
@@ -52,9 +55,12 @@ Layered_Pagination.sln
 │ ├── Enums/ # Enum types (if any)
 │ └── Car.cs # Main entity used in the sample
 
+--
+## Server Projects
 
 
-
+## Client Projects
+Using Angular
 
 
 ## 💡 Future Improvements
