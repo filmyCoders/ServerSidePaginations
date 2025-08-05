@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "4J+s3zCGiOk2bRqpZdQMkrb40NsDpUA9LpQoVqV/4BM=",
+  "Source": "CRUDOperations",
+  "BasePath": "_content/CRUDOperations",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CRUDOperations\\wwwroot",
+      "Source": "CRUDOperations",
+      "ContentRoot": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
+      "BasePath": "_content/CRUDOperations",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\css\\style.css",
+      "SourceId": "CRUDOperations",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
+      "BasePath": "_content/CRUDOperations",
+      "RelativePath": "Asset/css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Asset\\css\\style.css"
+    },
+    {
+      "Identity": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\js\\mode.js",
+      "SourceId": "CRUDOperations",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
+      "BasePath": "_content/CRUDOperations",
+      "RelativePath": "Asset/js/mode.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Asset\\js\\mode.js"
+    }
+  ]
+}

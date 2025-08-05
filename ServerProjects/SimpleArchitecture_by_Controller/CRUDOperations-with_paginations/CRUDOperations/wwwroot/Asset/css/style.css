@@ -1,0 +1,91 @@
+﻿/* ===== Background & Font ===== */
+.swagger-ui {
+    background: #f5f5f5;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+/* ===== Top Bar ===== */
+.topbar {
+    background-color: #db4747 !important;
+    height: 60px;
+}
+
+.topbar-wrapper .link span {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: #fff !important;
+}
+
+/* ===== API Information Card ===== */
+.swagger-ui .info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
+    margin-bottom: 20px;
+}
+
+    .swagger-ui .info .title {
+        color: #0d6efd;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    .swagger-ui .info .version {
+        background: #e7e7e7;
+        padding: 3px 8px;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+
+/* ===== Secure APIs - Lock Icon ===== */
+.swagger-ui .opblock .authorization__btn {
+    background-color: #db4747 !important;
+    color: white !important;
+    border-radius: 2px;
+}
+
+/* ===== Authorize Button Style ===== */
+.swagger-ui .btn.authorize {
+    background-color: #0d6efd !important;
+    color: #fff !important;
+    border-radius: 2px !important;
+}
+
+/* ===== API Tag Sections ===== */
+.swagger-ui .opblock-tag {
+    background: #db8447 !important;
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 2px;
+    padding: 8px 10px;
+}
+
+/* ===== Method Colors ===== */
+.opblock.opblock-get {
+    border-color: #0d6efd !important;
+}
+
+.opblock.opblock-post {
+    border-color: #28a745 !important;
+}
+
+.opblock.opblock-put {
+    border-color: #ffc107 !important;
+}
+
+.opblock.opblock-delete {
+    border-color: #db4747 !important;
+}
+
+/* ===== Buttons and Inputs ===== */
+.swagger-ui .btn {
+    border-radius: 2px !important;
+}
+
+.swagger-ui input, .swagger-ui select {
+    border-radius: 2px !important;
+    border: 1px solid #ccc !important;
+}

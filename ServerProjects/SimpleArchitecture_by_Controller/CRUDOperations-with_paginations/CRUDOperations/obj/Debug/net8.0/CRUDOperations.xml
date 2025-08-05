@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CRUDOperations</name>
+    </assembly>
+    <members>
+        <member name="M:CRUDOperations.Controllers.CarController.AddNewCar(CRUDOperations.DTOs.AddCarsRequest)">
+            <summary>
+            Add a new car (v1 only)
+            </summary>
+        </member>
+        <member name="M:CRUDOperations.Controllers.CarController.Update(CRUDOperations.DTOs.UpdateCarsRequest)">
+            <summary>
+            Update car (v2 only)
+            </summary>
+        </member>
+        <member name="M:CRUDOperations.Controllers.CarController.GetAll">
+            <summary>
+            Get all cars (available in all versions)
+            </summary>
+        </member>
+        <member name="M:CRUDOperations.Controllers.CarController.GetAllPagination(System.Int32,System.Int32,System.String,System.String,System.Boolean)">
+            <summary> 
+            Get all cars (available in all versions)
+            </summary>
+        </member>
+        <member name="M:CRUDOperations.Controllers.CarController.GetCar(System.Guid)">
+            <summary>
+            Get car by Id (all versions)
+            </summary>
+        </member>
+        <member name="M:CRUDOperations.Controllers.CarController.DeleteCar(System.Guid)">
+            <summary>
+            Delete car (all versions)
+            </summary>
+        </member>
+        <member name="T:CRUDOperations.Migrations.intial">
+            <inheritdoc />
+        </member>
+        <member name="M:CRUDOperations.Migrations.intial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CRUDOperations.Migrations.intial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CRUDOperations.Migrations.intial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

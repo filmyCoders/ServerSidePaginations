@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\css\\style.css",
+      "PackagePath": "staticwebassets\\Asset\\css\\style.css"
+    },
+    {
+      "Id": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\js\\mode.js",
+      "PackagePath": "staticwebassets\\Asset\\js\\mode.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CRUDOperations.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CRUDOperations.props",
+      "PackagePath": "build\\CRUDOperations.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CRUDOperations.props",
+      "PackagePath": "buildMultiTargeting\\CRUDOperations.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CRUDOperations.props",
+      "PackagePath": "buildTransitive\\CRUDOperations.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
