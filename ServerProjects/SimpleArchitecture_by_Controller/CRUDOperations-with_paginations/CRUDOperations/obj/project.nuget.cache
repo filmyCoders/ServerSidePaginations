@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rVhRzUlJLoQ=",
+  "dgSpecHash": "R4rf9d7ZHmc=",
   "success": true,
-  "projectFilePath": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\CRUDOperations.csproj",
+  "projectFilePath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\CRUDOperations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikhil\\.nuget\\packages\\asp.versioning.abstractions\\8.0.0\\asp.versioning.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Nikhil\\.nuget\\packages\\asp.versioning.http\\8.0.0\\asp.versioning.http.8.0.0.nupkg.sha512",

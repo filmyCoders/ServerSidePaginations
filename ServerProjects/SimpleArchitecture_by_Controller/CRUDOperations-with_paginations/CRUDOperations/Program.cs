@@ -1,6 +1,9 @@
 ﻿using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using CRUDOperations.Db_Context;
+using CRUDOperations.DTOs;
+using CRUDOperations.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -10,15 +13,15 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Database Configuration
+// Configure Database
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Databasestring")));
 
-// API Configuration
+// Configure API
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// API Versioning Configuration
+// Configure API Versioning
 builder.Services.AddApiVersioning(options =>
 {
     options.DefaultApiVersion = new Asp.Versioning.ApiVersion(2, 0);
@@ -33,11 +36,10 @@ builder.Services.AddApiVersioning(options =>
     options.SubstituteApiVersionInUrl = true;
 });
 
-// Swagger Configuration
+// Configure Swagger
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 builder.Services.AddSwaggerGen(options =>
 {
-    // Add Bearer Authentication
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -59,11 +61,10 @@ builder.Services.AddSwaggerGen(options =>
                     Id = "Bearer"
                 }
             },
-            Array.Empty<string>()
+            new string[] { }
         }
     });
 
-    // Include XML comments
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     options.IncludeXmlComments(xmlPath);
@@ -71,7 +72,7 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
-// Configure Swagger UI
+// Middleware
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
@@ -79,9 +80,7 @@ app.UseSwaggerUI(options =>
 
     foreach (var description in provider.ApiVersionDescriptions)
     {
-        options.SwaggerEndpoint(
-            $"/swagger/{description.GroupName}/swagger.json",
-            $"API {description.GroupName.ToUpperInvariant()}");
+        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", $"API {description.GroupName.ToUpperInvariant()}");
     }
 
     options.RoutePrefix = "swagger";
@@ -92,7 +91,6 @@ app.UseAuthorization();
 app.MapControllers();
 app.Run();
 
-// Swagger Configuration Options
 public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
 {
     private readonly IApiVersionDescriptionProvider _provider;
@@ -104,15 +102,12 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
     {
         foreach (var description in _provider.ApiVersionDescriptions)
         {
-            options.SwaggerDoc(description.GroupName,
-                new OpenApiInfo
-                {
-                    Title = $"My API {description.ApiVersion}",
-                    Version = description.ApiVersion.ToString(),
-                    Description = description.IsDeprecated
-                        ? "⚠️ Deprecated"
-                        : "Active version"
-                });
+            options.SwaggerDoc(description.GroupName, new OpenApiInfo
+            {
+                Title = $"My API {description.ApiVersion}",
+                Version = description.ApiVersion.ToString(),
+                Description = description.IsDeprecated ? "\u26A0\uFE0F Deprecated" : "Active version"
+            });
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4J+s3zCGiOk2bRqpZdQMkrb40NsDpUA9LpQoVqV/4BM=",
+  "Hash": "s05L3vNMkxZkkGq9RlZGgaB8htKxkheY+LKt9h98U1E=",
   "Source": "CRUDOperations",
   "BasePath": "_content/CRUDOperations",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CRUDOperations\\wwwroot",
       "Source": "CRUDOperations",
-      "ContentRoot": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
+      "ContentRoot": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
       "BasePath": "_content/CRUDOperations",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\css\\style.css",
+      "Identity": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\css\\style.css",
       "SourceId": "CRUDOperations",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
+      "ContentRoot": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
       "BasePath": "_content/CRUDOperations",
       "RelativePath": "Asset/css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Asset\\css\\style.css"
     },
     {
-      "Identity": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\js\\mode.js",
+      "Identity": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\Asset\\js\\mode.js",
       "SourceId": "CRUDOperations",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
+      "ContentRoot": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\wwwroot\\",
       "BasePath": "_content/CRUDOperations",
       "RelativePath": "Asset/js/mode.js",
       "AssetKind": "All",

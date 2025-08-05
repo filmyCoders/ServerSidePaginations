@@ -30,30 +30,36 @@ namespace CRUDOperations.Controllers
         [Asp.Versioning.MapToApiVersion("1.0")]
         public async Task<IActionResult> AddNewCar([FromBody] AddCarsRequest request)
         {
-            if (request == null)
-                return BadRequest("Request is empty");
-
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var car = new Car
+            try
             {
-                Brand = request.Brand,
-                Classes = request.Classes,
-                Date = request.Date,
-                Model = request.Model,
-                Model_No = request.Model_No,
-                Price = request.Price,
-                Activity = request.Activity,
-                Features = request.Features
-            };
+                if (request == null)
+                    return BadRequest("Request is empty");
 
-            await _appDbContext.Cars.AddAsync(car);
-            await _appDbContext.SaveChangesAsync();
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            return Ok("Car added successfully (v1)");
+                var car = new Car
+                {
+                    Brand = request.Brand,
+                    Classes = request.Classes,
+                    Date = request.Date,
+                    Model = request.Model,
+                    Model_No = request.Model_No,
+                    Price = request.Price,
+                    Activity = request.Activity,
+                    Features = request.Features
+                };
+
+                await _appDbContext.Cars.AddAsync(car);
+                await _appDbContext.SaveChangesAsync();
+
+                return Ok("Car added successfully (v1)");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
-
         /// <summary>
         /// Update car (v2 only)
         /// </summary>
@@ -61,29 +67,36 @@ namespace CRUDOperations.Controllers
         [Asp.Versioning.MapToApiVersion("2.0")]
         public async Task<IActionResult> Update([FromBody] UpdateCarsRequest request)
         {
-            if (request == null)
-                return BadRequest("Request is empty");
+            try
+            {
+                if (request == null)
+                    return BadRequest("Request is empty");
 
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            var car = await _appDbContext.Cars.FirstOrDefaultAsync(x => x.CarId == request.CarId);
-            if (car == null)
-                return NotFound("Car not found");
+                var car = await _appDbContext.Cars.FirstOrDefaultAsync(x => x.CarId == request.CarId);
+                if (car == null)
+                    return NotFound("Car not found");
 
-            car.Brand = request.Brand;
-            car.Classes = request.Classes;
-            car.Date = request.Date;
-            car.Model = request.Model;
-            car.Model_No = request.Model_No;
-            car.Price = request.Price;
-            car.Activity = request.Activity;
-            car.Features = request.Features;
+                car.Brand = request.Brand;
+                car.Classes = request.Classes;
+                car.Date = request.Date;
+                car.Model = request.Model;
+                car.Model_No = request.Model_No;
+                car.Price = request.Price;
+                car.Activity = request.Activity;
+                car.Features = request.Features;
 
-            _appDbContext.Cars.Update(car);
-            await _appDbContext.SaveChangesAsync();
+                _appDbContext.Cars.Update(car);
+                await _appDbContext.SaveChangesAsync();
 
-            return Ok("Car updated successfully (v2)");
+                return Ok("Car updated successfully (v2)");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
         /// <summary>
@@ -92,89 +105,113 @@ namespace CRUDOperations.Controllers
         [HttpGet("get-cars")]
         public async Task<IActionResult> GetAll()
         {
-            var cars = await _appDbContext.Cars.ToListAsync();
-            return Ok(cars);
+            try
+            {
+                var cars = await _appDbContext.Cars.ToListAsync();
+                return Ok(cars);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
         /// <summary> 
         /// Get all cars (available in all versions)
         /// </summary>
+        /// 
+
         [HttpGet("get-cars-paged")]
-        public async Task<IActionResult> GetAllPagination( int pageIndex,int pageSize, string? search, string? sotringcolumn,bool sortingType=false)
+
+        public async Task<IActionResult> GetAllPagination(int pageIndex, int pageSize, string? search, string? sotringcolumn, bool sortingType = false)
         {
-            var cars =  _appDbContext.Cars.AsQueryable();
-
-            //Searching 
-            if (!string.IsNullOrWhiteSpace(search))
+            try
             {
-                bool isNumber = int.TryParse(search, out int priceValue);
+                var cars = _appDbContext.Cars.AsQueryable();
 
-                cars = cars.Where(x =>
-                    x.Brand.Contains(search) ||
-                    x.Classes.Contains(search) ||
-                    x.Model.Contains(search) ||
-                    (isNumber && x.Price == priceValue));
+                if (!string.IsNullOrWhiteSpace(search))
+                {
+                    bool isNumber = int.TryParse(search, out int priceValue);
+                    cars = cars.Where(x =>
+                        x.Brand.Contains(search) ||
+                        x.Classes.Contains(search) ||
+                        x.Model.Contains(search) ||
+                        (isNumber && x.Price == priceValue));
+                }
+
+                if (!string.IsNullOrEmpty(sotringcolumn))
+                {
+                    cars = !sortingType
+                        ? cars.OrderBy(e => EF.Property<object>(e, sotringcolumn))
+                        : cars.OrderByDescending(e => EF.Property<object>(e, sotringcolumn));
+                }
+                else
+                {
+                    cars = cars.OrderBy(x => x.CarId);
+                }
+
+                int totalRecords = await cars.CountAsync();
+                var pagedCars = await cars.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+                int totalPages = (int)Math.Ceiling(totalRecords / (double)pageSize);
+
+                var response = new
+                {
+                    totalRecords,
+                    totalPages,
+                    cars = pagedCars
+                };
+
+                return Ok(response);
             }
-
-            if (!string.IsNullOrEmpty(sotringcolumn))
+            catch (Exception ex)
             {
-                cars = !sortingType ? cars.OrderBy(e => EF.Property<object>(e, sotringcolumn))
-                    : cars.OrderByDescending(e => EF.Property<object>(e, sotringcolumn));
+                return StatusCode(500, ex.Message);
             }
-            else
-            {
-                cars = cars.OrderBy(x => x.CarId);
-            }
-
-            int totalRecords =await cars.CountAsync();
-
-            cars=cars.Skip((pageIndex-1)*pageSize).Take(pageSize); 
-
-            int totalPages=(int)Math.Ceiling(totalRecords/(double)pageSize);
-
-            var response = new
-            {
-                totalRecords,
-                totalPages,
-                cars
-
-
-            };
-
-            return Ok(response);
         }
 
-
-        /// <summary>
-        /// Get car by Id (all versions)
-        /// </summary>
         [HttpGet("get-car-by-id/{id:guid}")]
         public async Task<IActionResult> GetCar(Guid id)
         {
-            var car = await _appDbContext.Cars.FirstOrDefaultAsync(x => x.CarId == id);
-            if (car == null)
-                return NotFound("Car not found");
+            try
+            {
+                var car = await _appDbContext.Cars.FirstOrDefaultAsync(x => x.CarId == id);
+                if (car == null)
+                    return NotFound("Car not found");
 
-            return Ok(car);
+                return Ok(car);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
-        /// <summary>
-        /// Delete car (all versions)
-        /// </summary>
         [HttpDelete("delete-car/{id:guid}")]
         public async Task<IActionResult> DeleteCar(Guid id)
         {
-            var car = await _appDbContext.Cars.FirstOrDefaultAsync(x => x.CarId == id);
-            if (car == null)
-                return NotFound("Car not found");
+            try
+            {
+                var car = await _appDbContext.Cars.FirstOrDefaultAsync(x => x.CarId == id);
+                if (car == null)
+                    return NotFound("Car not found");
 
-            _appDbContext.Cars.Remove(car);
-            await _appDbContext.SaveChangesAsync();
+                _appDbContext.Cars.Remove(car);
+                await _appDbContext.SaveChangesAsync();
 
-            return Ok("Car deleted successfully");
+                return Ok("Car deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
-    }
 
+
+      }
+
+
+
+    //This is only fo checking Api Versioning
     // Separate controllers for each version (alternative approach)
     [ApiController]
     [Asp.Versioning.ApiVersion("1.0")]

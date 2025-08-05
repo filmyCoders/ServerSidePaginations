@@ -4651,11 +4651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\CRUDOperations.csproj",
+      "projectUniqueName": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\CRUDOperations.csproj",
       "projectName": "CRUDOperations",
-      "projectPath": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\CRUDOperations.csproj",
+      "projectPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\CRUDOperations.csproj",
       "packagesPath": "C:\\Users\\Nikhil\\.nuget\\packages\\",
-      "outputPath": "G:\\New Gihub Projects\\Simple-Architecture\\CRUDOperations-with_paginations\\CRUDOperations\\obj\\",
+      "outputPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\SimpleArchitecture_by_Controller\\CRUDOperations-with_paginations\\CRUDOperations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikhil\\AppData\\Roaming\\NuGet\\NuGet.Config",

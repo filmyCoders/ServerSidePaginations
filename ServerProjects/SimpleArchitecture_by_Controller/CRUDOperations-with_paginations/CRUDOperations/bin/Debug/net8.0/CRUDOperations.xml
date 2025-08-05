@@ -23,16 +23,7 @@
             <summary> 
             Get all cars (available in all versions)
             </summary>
-        </member>
-        <member name="M:CRUDOperations.Controllers.CarController.GetCar(System.Guid)">
-            <summary>
-            Get car by Id (all versions)
-            </summary>
-        </member>
-        <member name="M:CRUDOperations.Controllers.CarController.DeleteCar(System.Guid)">
-            <summary>
-            Delete car (all versions)
-            </summary>
+            
         </member>
         <member name="T:CRUDOperations.Migrations.intial">
             <inheritdoc />
