@@ -1,22 +1,17 @@
 ﻿using Business.Contract.IServices;
 using Business.Models;
 using Business.Models.Request;
-using Business.Models.Response;
 using DataAccess.Repositories.IRepo;
-using DataAccess.Repositories.Repo;
 using Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Business.Contract.Services
 {
-    public class CarService:ICarService
+    public class CarService : ICarService
     {
         private readonly ICarRepo _repository;
 
@@ -25,26 +20,20 @@ namespace Business.Contract.Services
             _repository = repository;
         }
 
-        public async Task<List<Car>> GetAllAsync() => await _repository.GetAllAsync();
+        public async Task<List<Car>> GetAllAsync()
+            => await _repository.GetAllAsync();
 
-        public async Task<Car> GetByIdAsync(Guid id) => await _repository.GetByIdAsync(id);
+        public async Task<Car> GetByIdAsync(Guid id)
+            => await _repository.GetByIdAsync(id);
 
-
-
-        public async Task<PaginatedList<Car>>CarPagination(PagedRequest<object?> pagedRequest)
+        public async Task<PaginatedList<Car>> CarPagination(PagedRequest<object?> pagedRequest)
         {
+            var query = await _repository.GetCarAllQueryable();
 
-
-              var query=await _repository.GetCarAllQueryable();
-
-            // Searching 
-
-            // Searching
+            // Search
             if (!string.IsNullOrEmpty(pagedRequest.SearchQuery))
             {
                 var searchQuery = pagedRequest.SearchQuery.ToLower();
-
-                // Try parse model number
                 bool isModelNo = int.TryParse(searchQuery, out int modelNo);
 
                 query = query.Where(x =>
@@ -54,6 +43,7 @@ namespace Business.Contract.Services
                     (isModelNo && x.Model_No == modelNo)
                 );
             }
+
             // Total count before pagination
             int totalRecords = await query.CountAsync();
 
@@ -61,25 +51,21 @@ namespace Business.Contract.Services
             if (!string.IsNullOrEmpty(pagedRequest.SortColumn))
             {
                 query = pagedRequest.IsAscending
-                ? query.OrderByDescending(e => EF.Property<object>(e, pagedRequest.SortColumn))
-                    : query.OrderBy(e => EF.Property<object>(e, pagedRequest.SortColumn));
+                    ? query.OrderBy(e => EF.Property<object>(e, pagedRequest.SortColumn))
+                    : query.OrderByDescending(e => EF.Property<object>(e, pagedRequest.SortColumn));
             }
             else
             {
-                // Default sorting (optional)
-                query = query.OrderBy(x => x.CarId);
-
+                query = query.OrderBy(x => x.CarId); // Default sort
             }
 
-            query=query.Skip((pagedRequest.PageIndex-1)*pagedRequest.PageSize).Take(pagedRequest.PageSize);
+            // Pagination
+            var items = await query
+                .Skip((pagedRequest.PageIndex - 1) * pagedRequest.PageSize)
+                .Take(pagedRequest.PageSize)
+                .ToListAsync();
 
-
-            var totalrecord=query.Count();
-            return new PaginatedList<Car>(query.ToList(), totalRecords, pagedRequest.PageIndex, pagedRequest.PageSize);
-
-
-
-
+            return new PaginatedList<Car>(items, totalRecords, pagedRequest.PageIndex, pagedRequest.PageSize);
         }
 
         public async Task AddAsync(AddCarsRequest car)
@@ -101,22 +87,24 @@ namespace Business.Contract.Services
 
         public async Task UpdateAsync(UpdateCarsRequest car)
         {
-            
-            var data=_repository.GetByIdAsync(car.CarId);
+            var data = await _repository.GetByIdAsync(car.CarId);
 
-            data.Result.CarId = car.CarId;
-            data.Result.Brand = car.Brand;
-            data.Result.Activity = car.Activity;
-            data.Result.Date = car.Date;
-            data.Result.Features = car.Features;
-            data.Result.Model = car.Model;
-            data.Result.Model_No = car.Model_No;
-            data.Result.Price = car.Price;
-            data.Result.Classes = car.Classes;
-            await _repository.UpdateAsync(data.Result);
+            if (data == null)
+                return; // Optionally handle not found case
 
+            data.Classes = car.Classes;
+            data.Brand = car.Brand;
+            data.Activity = car.Activity;
+            data.Date = car.Date;
+            data.Features = car.Features;
+            data.Model = car.Model;
+            data.Model_No = car.Model_No;
+            data.Price = car.Price;
 
+            await _repository.UpdateAsync(data);
         }
-        public async Task DeleteAsync(Guid id) => await _repository.DeleteAsync(id);
+
+        public async Task DeleteAsync(Guid id)
+            => await _repository.DeleteAsync(id);
     }
 }

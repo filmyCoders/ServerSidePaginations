@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\uow\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\uow\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\repositories\\repo\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\repositories\\repo\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\businesslogic\\contract\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|solutionrelative:businesslogic\\contract\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\businesslogic\\pagiantionextension\\filterspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|solutionrelative:businesslogic\\pagiantionextension\\filterspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\businesslogic\\models\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|solutionrelative:businesslogic\\models\\paginationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\businesslogic\\contract\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|solutionrelative:businesslogic\\contract\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\repositories\\repo\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\repositories\\repo\\carrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21F49464-0A0A-4311-B82A-5FB007F06187}|BusinessLogic\\Business.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\businesslogic\\contract\\iservices\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,14 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\uow\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\uow\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|g:\\new gihub projects\\serversidepaginations\\serverprojects\\layered_architecture_with_paginationfilter\\dataaccesslayer\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDF63CB0-7FD8-422E-BDE5-9E8905A28700}|DataAccessLayer\\DataAccess.csproj|solutionrelative:dataaccesslayer\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,69 +114,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "FiltersPage.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\PagiantionExtension\\FiltersPage.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\PagiantionExtension\\FiltersPage.cs",
               "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\PagiantionExtension\\FiltersPage.cs",
               "RelativeToolTip": "BusinessLogic\\PagiantionExtension\\FiltersPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T12:42:59.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IQueryableExtensions.cs",
-              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
-              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
-              "RelativeToolTip": "BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAgwGUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T12:41:19.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "CarRepo.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\Repositories\\Repo\\CarRepo.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\Repo\\CarRepo.cs",
               "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\Repositories\\Repo\\CarRepo.cs",
               "RelativeToolTip": "DataAccessLayer\\Repositories\\Repo\\CarRepo.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAhwEsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:49:27.455Z"
+              "WhenOpened": "2025-07-30T14:49:27.455Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ICarService.cs",
-              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Contract\\IServices\\ICarService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Contract\\IServices\\ICarService.cs",
-              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Contract\\IServices\\ICarService.cs",
-              "RelativeToolTip": "BusinessLogic\\Contract\\IServices\\ICarService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAhwBIAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:46:49.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "CarService.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Contract\\Services\\CarService.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Contract\\Services\\CarService.cs",
               "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Contract\\Services\\CarService.cs",
               "RelativeToolTip": "BusinessLogic\\Contract\\Services\\CarService.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAcwFIAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:47:03.046Z"
+              "WhenOpened": "2025-07-30T14:47:03.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Car.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\Car.cs",
               "RelativeDocumentMoniker": "Entities\\Car.cs",
@@ -188,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CarResponse.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Models\\Response\\CarResponse.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Models\\Response\\CarResponse.cs",
@@ -200,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "PaginationRequest.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Models\\PaginationRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Models\\PaginationRequest.cs",
@@ -212,7 +189,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UOW\\IUnitOfWork.cs",
+              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\IUnitOfWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\UOW\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:44:20.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UOW\\UnitOfWork.cs",
+              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\UnitOfWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\UOW\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:44:33.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICarService.cs",
+              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Contract\\IServices\\ICarService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Contract\\IServices\\ICarService.cs",
+              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Contract\\IServices\\ICarService.cs",
+              "RelativeToolTip": "BusinessLogic\\Contract\\IServices\\ICarService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAhwBIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:46:49.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IQueryableExtensions.cs",
+              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
+              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
+              "RelativeToolTip": "BusinessLogic\\PagiantionExtension\\IQueryableExtensions.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAgwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T12:41:19.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CarController.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "WebApi\\Controllers\\CarController.cs",
@@ -220,12 +247,11 @@
               "RelativeToolTip": "WebApi\\Controllers\\CarController.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAASwD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:51:50.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T14:51:50.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Business.csproj",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj",
               "RelativeDocumentMoniker": "BusinessLogic\\Business.csproj",
@@ -233,12 +259,11 @@
               "RelativeToolTip": "BusinessLogic\\Business.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-30T14:16:37.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T14:16:37.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PaginatedList.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Models\\PaginatedList.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Models\\PaginatedList.cs",
@@ -250,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ICarRepo.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\Repositories\\IRepo\\ICarRepo.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\IRepo\\ICarRepo.cs",
@@ -262,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CarRequest.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Models\\Request\\CarRequest.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Models\\Request\\CarRequest.cs",
@@ -274,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\Db_Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Db_Context\\AppDbContext.cs",
@@ -286,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ServiceContainerDI.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\DIContainer\\ServiceContainerDI.cs",
               "RelativeDocumentMoniker": "WebApi\\DIContainer\\ServiceContainerDI.cs",
@@ -298,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "WebApi\\appsettings.json",
@@ -310,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\Program.cs",
               "RelativeDocumentMoniker": "WebApi\\Program.cs",
@@ -322,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "WebApi.csproj",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\WebApi.csproj",
               "RelativeDocumentMoniker": "WebApi\\WebApi.csproj",
@@ -334,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CarEnum.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\Enums\\CarEnum.cs",
               "RelativeDocumentMoniker": "Entities\\Enums\\CarEnum.cs",
@@ -346,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "BaseEntities.cs",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\Base\\BaseEntities.cs",
               "RelativeDocumentMoniker": "Entities\\Base\\BaseEntities.cs",
@@ -358,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "DataAccess.csproj",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\DataAccess.csproj",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataAccess.csproj",
@@ -370,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Entities.csproj",
               "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\Entities.csproj",
               "RelativeDocumentMoniker": "Entities\\Entities.csproj",
@@ -379,30 +404,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-07-30T14:21:42.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\UOW\\IUnitOfWork.cs",
-              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\IUnitOfWork.cs",
-              "RelativeToolTip": "DataAccessLayer\\UOW\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:44:20.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\UOW\\UnitOfWork.cs",
-              "ToolTip": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\UOW\\UnitOfWork.cs",
-              "RelativeToolTip": "DataAccessLayer\\UOW\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:44:33.537Z"
             }
           ]
         },

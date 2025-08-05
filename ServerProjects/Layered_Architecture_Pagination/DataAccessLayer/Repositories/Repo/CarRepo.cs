@@ -6,14 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccess.Repositories.Repo
 {
     public class CarRepo : ICarRepo
     {
-
         private readonly AppDbContext _context;
 
         public CarRepo(AppDbContext context)
@@ -23,9 +21,7 @@ namespace DataAccess.Repositories.Repo
 
         public async Task<List<Car>> GetAllAsync()
         {
-          var data=  _context.Cars.ToList();
-
-            return data;
+            return await _context.Cars.ToListAsync();
         }
 
         public async Task<Car> GetByIdAsync(Guid id)
@@ -55,21 +51,20 @@ namespace DataAccess.Repositories.Repo
             }
         }
 
-        public async Task<IQueryable<Car>> GetCarAllQueryable()
+        public Task<IQueryable<Car>> GetCarAllQueryable()
         {
-
-            return  _context.Cars.AsQueryable();
+            return Task.FromResult(_context.Cars.AsQueryable());
         }
 
-        public async Task<IQueryable<Car>> GetCarAllQueryable(Expression<Func<Car, bool>> predicate)
+        public Task<IQueryable<Car>> GetCarAllQueryable(Expression<Func<Car, bool>> predicate)
         {
-            var cars = _context.Cars.AsQueryable();
+            var cars = predicate == null
+                ? _context.Cars.AsQueryable()
+                : _context.Cars.Where(predicate).AsQueryable();
 
-            if (predicate != null)
-                cars = cars.Where(predicate);
-
-            return await Task.FromResult(cars);
+            return Task.FromResult(cars);
         }
+
 
     }
 }
