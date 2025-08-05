@@ -2700,11 +2700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj",
+      "projectUniqueName": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj",
+      "projectPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj",
       "packagesPath": "C:\\Users\\Nikhil\\.nuget\\packages\\",
-      "outputPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\obj\\",
+      "outputPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikhil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2722,8 +2722,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\DataAccess.csproj": {
-              "projectPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\DataAccess.csproj"
+            "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\DataAccess.csproj": {
+              "projectPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\DataAccessLayer\\DataAccess.csproj"
             }
           }
         }

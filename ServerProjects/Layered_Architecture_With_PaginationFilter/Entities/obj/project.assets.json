@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\Entities\\Entities.csproj",
+      "projectUniqueName": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\Entities\\Entities.csproj",
+      "projectPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\Nikhil\\.nuget\\packages\\",
-      "outputPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\Entities\\obj\\",
+      "outputPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikhil\\AppData\\Roaming\\NuGet\\NuGet.Config",

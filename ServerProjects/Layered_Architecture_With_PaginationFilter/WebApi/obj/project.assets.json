@@ -3154,11 +3154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\WebApi\\WebApi.csproj",
+      "projectPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Nikhil\\.nuget\\packages\\",
-      "outputPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\WebApi\\obj\\",
+      "outputPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikhil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3176,8 +3176,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj": {
-              "projectPath": "G:\\New Gihub Projects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj"
+            "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj": {
+              "projectPath": "G:\\New Gihub Projects\\ServerSidePaginations\\ServerProjects\\Layered_Architecture_With_PaginationFilter\\BusinessLogic\\Business.csproj"
             }
           }
         }
